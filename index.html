@@ -1,94 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphic Design Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">GD.</div>
-        <ul class="nav-links">
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aerial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-    <header class="hero">
-        <h1 class="fade-in">Crafting visual stories.</h1>
-        <p class="fade-in">I am a multidisciplinary graphic designer specializing in brand identity, editorial design, and digital experiences.</p>
-        <a href="#work" class="btn fade-in">View Selected Work</a>
-    </header>
+				<!-- Header -->
+					<header id="header">
+						<h1>Adam Jensen</h1>
+						<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
+						<nav>
+							<ul>
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
 
-    <section id="work" class="portfolio">
-        <div class="portfolio-header fade-in">
-            <h2>Projects</h2>
-            <div class="filter-buttons">
-                <button class="active" data-filter="all">All</button>
-                <button data-filter="branding">Branding</button>
-                <button data-filter="illustration">Illustration</button>
-                <button data-filter="ui">UI/UX</button>
-            </div>
-        </div>
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+					</footer>
 
-        <div class="grid">
-            <div class="item branding fade-in">
-                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Brand Identity Project">
-                <div class="overlay">
-                    <h3>Aura Coffee</h3>
-                    <p>Brand Identity</p>
-                </div>
-            </div>
-            <div class="item ui fade-in">
-                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="App Design Project">
-                <div class="overlay">
-                    <h3>Fintech Dashboard</h3>
-                    <p>UI/UX Design</p>
-                </div>
-            </div>
-            <div class="item illustration fade-in">
-                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Editorial Illustration">
-                <div class="overlay">
-                    <h3>The Modern Worker</h3>
-                    <p>Editorial Illustration</p>
-                </div>
-            </div>
-            <div class="item branding fade-in">
-                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Packaging Project">
-                <div class="overlay">
-                    <h3>Lumina Skincare</h3>
-                    <p>Packaging & Branding</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2 class="fade-in">About Me</h2>
-        <p class="fade-in">With over 5 years of experience in the design industry, I help brands find their unique voice through thoughtful, minimalist, and impactful visual design. When I'm not pushing pixels, I'm usually sketching or exploring typography trends.</p>
-    </section>
-
-    <footer id="contact">
-        <h2 class="fade-in">Let's build something together.</h2>
-        <p class="fade-in">Currently available for freelance opportunities.</p>
-        <a href="mailto:hello@example.com" class="btn btn-outline fade-in">hello@example.com</a>
-        
-        <div class="socials fade-in">
-            <a href="#">Behance</a>
-            <a href="#">Dribbble</a>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-        </div>
-        <p class="copyright">&copy; 2026 Graphic Design Portfolio. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>
