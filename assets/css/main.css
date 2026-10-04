@@ -1162,3 +1162,42 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
+
+/* Scale the animated background with the viewport. */
+	#bg {
+		-moz-animation: bg 60s linear infinite;
+		-webkit-animation: bg 60s linear infinite;
+		-ms-animation: bg 60s linear infinite;
+		animation: bg 60s linear infinite;
+		background-position: bottom left;
+		background-repeat: repeat-x;
+		background-size: 125vw auto;
+		width: 375vw;
+	}
+
+	@-moz-keyframes bg {
+		100% {
+			-moz-transform: translate3d(-125vw,0,0);
+			transform: translate3d(-125vw,0,0);
+		}
+	}
+
+	@-webkit-keyframes bg {
+		100% {
+			-webkit-transform: translate3d(-125vw,0,0);
+			transform: translate3d(-125vw,0,0);
+		}
+	}
+
+	@-ms-keyframes bg {
+		100% {
+			-ms-transform: translate3d(-125vw,0,0);
+			transform: translate3d(-125vw,0,0);
+		}
+	}
+
+	@keyframes bg {
+		100% {
+			transform: translate3d(-125vw,0,0);
+		}
+	}
