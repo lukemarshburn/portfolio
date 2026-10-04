@@ -226,7 +226,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("assets/css/images/pexels-mack-kamp-644644-1449455.jpg") bottom left;
+		background: #06050c url("images/pexels-jplenio-20208915.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -304,6 +304,10 @@ input, select, textarea {
 		width: 6750px;
 	}
 
+	#bg.is-alternate {
+		background-image: url("images/pexels-mack-kamp-644644-1449455.jpg");
+	}
+
 /* Overlay */
 
 	@-moz-keyframes overlay {
@@ -367,7 +371,11 @@ input, select, textarea {
 /* Main */
 
 	#main {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
 		height: 100%;
+		justify-content: center;
 		left: 0;
 		position: fixed;
 		text-align: center;
@@ -376,12 +384,7 @@ input, select, textarea {
 	}
 
 		#main:before {
-			content: '';
-			display: inline-block;
-			height: 100%;
-			margin-right: 0;
-			vertical-align: middle;
-			width: 1px;
+			display: none;
 		}
 
 /* Header */
@@ -667,7 +670,39 @@ input, select, textarea {
 				-webkit-touch-callout: none;
 				border: 0;
 				display: inline-block;
+				position: relative;
 			}
+
+				#header nav a .profile-preview {
+					border: solid 2px #fff;
+					border-radius: 50%;
+					display: block;
+					height: 4.375em;
+					left: 50%;
+					opacity: 0;
+					overflow: hidden;
+					pointer-events: none;
+					position: absolute;
+					top: 50%;
+					transform: translate(-50%, -50%) scale(0.9);
+					transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out, visibility 0.2s;
+					visibility: hidden;
+					width: 4.375em;
+					z-index: 2;
+				}
+
+					#header nav a .profile-preview img {
+						height: 100%;
+						object-fit: cover;
+						width: 100%;
+					}
+
+				#header nav a:hover .profile-preview,
+				#header nav a:focus-visible .profile-preview {
+					opacity: 1;
+					transform: translate(-50%, -50%) scale(1);
+					visibility: visible;
+				}
 
 				#header nav a:before {
 					-moz-transition: all 0.2s ease-in-out;
@@ -711,6 +746,29 @@ input, select, textarea {
 
 /* Footer */
 
+	#content {
+		-moz-animation: header 1s 2.25s forwards;
+		-webkit-animation: header 1s 2.25s forwards;
+		-ms-animation: header 1s 2.25s forwards;
+		animation: header 1s 2.25s forwards;
+		-moz-backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-moz-transform: translate3d(0,0,0);
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+		background-color: rgba(0, 0, 0, 0.4);
+		border: solid 1px rgba(255, 255, 255, 0.5);
+		margin: 1em auto 0;
+		max-width: 30em;
+		opacity: 0;
+		padding: 1em 1.5em;
+		position: relative;
+		width: 80%;
+	}
+
 	#footer {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
@@ -725,6 +783,31 @@ input, select, textarea {
 		text-align: center;
 		width: 100%;
 	}
+
+	#background-toggle {
+		align-items: center;
+		background: rgba(0, 0, 0, 0.5);
+		border: solid 1px rgba(255, 255, 255, 0.75);
+		border-radius: 50%;
+		bottom: 1.5em;
+		color: #fff;
+		cursor: pointer;
+		display: flex;
+		font: inherit;
+		font-size: 0.8em;
+		height: 2.75em;
+		justify-content: center;
+		padding: 0;
+		position: fixed;
+		right: 1.5em;
+		width: 2.75em;
+		z-index: 1;
+	}
+
+		#background-toggle:hover,
+		#background-toggle:focus-visible {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
 
 /* Wide */
 
