@@ -386,6 +386,14 @@ body {
 	background: none;
 }
 
+#footer .version {
+	display: block;
+	margin-top: 0.6em;
+	font-size: 0.7em;
+	letter-spacing: 0.12em;
+	opacity: 0.55;
+}
+
 @media screen and (max-width: 980px) {
 	.portfolio-intro,
 	.contact-panel {
