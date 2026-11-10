@@ -6,6 +6,17 @@ body {
 	overflow-y: auto;
 }
 
+#header h1,
+.portfolio-intro h2,
+.feature-box strong,
+.section-header h3,
+.project-heading h3,
+.project-copy h3,
+.contact-panel h3 {
+	font-family: 'Space Grotesk', 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+}
+
 #wrapper {
 	position: relative;
 	height: auto;
@@ -180,6 +191,10 @@ body {
 	color: rgba(255, 255, 255, 0.75);
 }
 
+.portfolio-project + .portfolio-project {
+	margin-top: 3rem;
+}
+
 .project-heading {
 	margin-bottom: 1.25em;
 }
@@ -221,6 +236,20 @@ body {
 	height: 11.5em;
 	position: relative;
 	overflow: hidden;
+}
+
+.project-visual.placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.04);
+}
+
+.project-visual.placeholder span {
+	font-size: 0.72em;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.45);
 }
 
 .project-card .project-visual.project-artwork {
